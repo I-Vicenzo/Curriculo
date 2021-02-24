@@ -2,303 +2,110 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="/css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="/imagens/coffee.jpg">
         <title>Curriculo - Ian Vicenzo</title>
-        <link rel="shortcut icon" href="imagens/coffee.jpg" type="image/x-icon">
-        
-        <style>
-        body {
-            background: #221c31;
-        }
-
-        ul {
-            margin: 0 auto;
-            height: 70px;
-            list-style: none;
-            width: 800px;
-            background: #ffffff17 ;
-        }
-
-        ul li {
-            float: left;
-        }
-
-        ul a {
-            display: block;
-            padding: 0 2em;
-            line-height: 2.2em;
-            text-decoration: none;
-            color: rgb(153, 153, 153);
-        }
-
-        ul .primeiro a {
-            background: none;
-        }
-
-        li a:hover {
-            color: black;
-            background: #ffffff50;
-        }
-
-        li a {
-            text-decoration: none;
-            color: rgb(112, 112, 112);
-            text-transform: uppercase;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 15px;
-            transition: 1s;
-        }
-
-        img {
-            width: 150px;
-            border-radius: 300px;
-            margin: 30px;
-            margin-top: 70px;
-            float: left;
-        }
-
-        p a {
-            text-decoration: none;
-            color: black;
-        }
-
-        p a:hover {
-            color: blue;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 30px;
-            color: gray;
-        }
-        .h1-dados-pessoais{
-            margin-top: 130px;
-            color: gray;
-        }
-
-        #informacoes-dados-pessoais {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        #informacoes-sobre {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-
-        }
-        #informacoes-formacao-academica {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        #informacoes-objetivo {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        #informacoes-conhecimento {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        #informacoes-cursos-aperfeicoamentos {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        #informacoes-redes-contatos {
-            width: 850px;
-            height: 300px;
-            background-color: #ffffff1e;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-
-        .formatacao-dados-pessoais {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 20px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        .formatacao-sobre {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 30px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        .formatacao-formacao-academica {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 30px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        .formatacao-objetivo {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 30px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        .formatacao-conhecimento {
-            text-align: center;
-            font-size: 25px;
-            padding-top: 100px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        .formatacao-cursos-aperfeicoamentos {
-            text-align: center;
-            padding-top: 100px;
-            font-size: 30px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-
-        dl {
-            text-align: center;
-            padding: 50px;
-            width: 425px auto;
-            height: 200px;
-            background-color: #0000001e;
-            border-radius: 0px 90px;
-        }
-        dt a{
-            text-decoration: none;
-            font-size: 40px;
-            color: black;
-            transition: 1s;
-        }
-
-        dt a:hover {
-            color: blue;
-        }
-        </style>
     </head>
 
     <body>
         <header>
-            <section>
-                <div>
-                    <ul class="barra-superior">
-                        <li><a href="#dados-pessoais">Dados Pessoais</li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#formacao-academica">Formação Acadêmica</a></li>
-                        <li><a href="#objetivo">Objetivo</a></li>
-                        <li><a href="#conhecimento">Conhecimento</a></li>
-                        <li><a href="#cursos-aperfeicoamentos">Cursos e Aperfeiçoamentos</a></li>
-                        <li><a href="#redes-contatos">Redes e Contatos</a></li>
+            <!--Menu Browser-->
+                <nav class="menu">
+                    <ul>
+                    <li class ="Texto"><a href="#perfil">Contato</a></li>
+                    <li class="Texto"><a href="#sobre">Sobre</a></li>
+                    <li class="Texto"><a href="#formacao">Formação Acadêmica</a></li>
+                    <li class="Texto"><a href="./conhecimentos.html">Conhecimento</a></li>
+                    <li class="Texto"><a href="#cursos">Cursos e Aperfeiçoamentos</a></li>
                     </ul>
-                </div>
-            </section>
-        </header>
-    
-        <main>
-            <section id="dados-pessoais">
-                <h1 class="h1-dados-pessoais">Dados Pessoais</h1>
-                <div id="informacoes-dados-pessoais">
-                    <img src="imagens/WhatsApp2Espelho.jpeg">
-                    <p class="formatacao-dados-pessoais">
-                        <a href="https://api.whatsapp.com/send?phone=5547992879543&text=Ol%C3%A1.%20Tudo%20bem%3F" target="_blank">Ian Vicenzo Meneghelli</a><br>
-                        Solteiro - 27/05/2002<br>
-                        <a href="https://www.google.com.br/maps/@-26.9178397,-49.1345228,3a,75y,75.66h,88.96t/data=!3m7!1e1!3m5!1sNG8ibTUn3quYU1HsKtp4FA!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DNG8ibTUn3quYU1HsKtp4FA%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D106.08802%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192" target="_blank">Rua Johann OHF, 1445</a> - 89042-300<br>
-                        <a href="https://api.whatsapp.com/send?phone=5547992879543&text=Ol%C3%A1.%20Tudo%20bem%3F" target="_blank">(47)9 9287-9543</a> - <a href="mailto:ivicenzo71@gmail.com?subject=Título%20da%20mensagem">ivicenzo71@gmail.com</a>
+                </nav>
+            <!--Menu Mobile-->
+                <div class="topnav">
+                        <div class="active">  </a>
+                        <div id="myLinks">
+                                  <a href="#perfil">Contato</a>
+                                  <a href="#sobre">Sobre</a>
+                                  <a href="#formacao">Formação</a>
+                                  <a href="./conhecimentos.html">Conhecimento</a>
+                                  <a href="#cursos">Cursos e Aperfeiçoamentos</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                        </div>
+                    </div>
+            </header>
+        
+            <main>
+        
+                <section class="perfil" id="perfil">
+                    <img id="profile" src="./imagens/WhatsApp2Espelho.jpeg" alt="Foto de Perfil">
+                </section>
+        
+                <section  class="Nome">
+                        <h1>Ian Vicenzo Meneghelli</h1>
+                </section>
+        
+                <section id="Informacoes" class="Info">
+                    <p> Solteiro, 18 anos, Brasileiro <br>
+                        Contatos: <br>
                     </p>
-                </div>
-            </section>
-
-            <section id="sobre">
-                <h1>Sobre</h1>
-                <div id="informacoes-sobre">
-                    <p class="formatacao-sobre">
+                    <a href="https://api.whatsapp.com/send?phone=5547992879543&text=Ol%C3%A1.%20Tudo%20bem%3F" target="_blank"><img id="wwp_logo" src="./imagens/whatsapp.png" title="Whatsapp" alt="whatsapp"></a>
+                    <a href="https://www.linkedin.com/in/ian-vicenzo-meneghelli/" target="_blank"><img id="link_logo" src="./imagens/linkedin.png" title="Perfil linkedin" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/ianvicenzo/" target="_blank"><img id="email_logo" src="./imagens/instagram.png" title="Insta" alt="insta"></a>
+                </section>
+        
+                <section id="sobre" class="Texto">
+                    <h3>Sobre</h3>
+                    <p>
                         Iniciante em programação, atualmente possuo um conhecimento nas linguagens HTML, CSS, e JAVA, com
                         um destaque um pouco maior nas linguagens de WEB.
                     </p>
-                </div>
-            </section>
-            <section id="formacao-academica">
-                <h1>Formação Acadêmica</h1>
-                <div id="informacoes-formacao-academica">
-                    <p class="formatacao-formacao-academica">
-                        Ensino Superior em Sistemas de Informação – UNIASSELVI – Blumenau, SC 2020 - previsão de término
-                        dezembro/2023<br>
-                        Ensino Médio integrado com curso técnico em administração - CEDUP - Blumenau, SC 2020 - 2017/2019
-                    </p>
-                </div>
-            </section>
-            <section id="objetivo">
-                <h1>Objetivo</h1>
-                <div id="informacoes-objetivo">
-                    <p class="formatacao-objetivo">
+                </section>
+                
+                <section id="formacao" class="Texto">
+                        <h3>Formação Acadêmica</h3>
+                        <p>
+                            Ensino Superior em Sistemas de Informação – UNIASSELVI – Blumenau, SC 2020 - previsão de término
+                            dezembro/2023<br><br>
+                            Ensino Médio integrado com curso técnico em administração - CEDUP - Blumenau, SC 2020 - 2017/2019
+                        </p>
+                </section>
+        
+                <section id="cursos" class="Texto">
+                            <h3>Cursos</h3>
+                            <p>Projeto Entra21 Blusoft - Java / JavaScript: (Previsão de Término Fevereiro/2021) <br>
+                                Carga Horária 480 h. <br>
+                                <br>
+                                Desenvolvimento WEB Completo 2020 - 20 Cursos + 20 Projeto – Udemy<br>
+                                Inglês Extremo – Curso Completo do Zero à Fluência – Udemy        
+                            </p>
+                </section>
+                <section id="objetivos" class="Texto">
+                    <h3>Objetivo</h3>
+                    <p>
                         Alcançar um alto nível de conhecimento sobre programação, com um foco em programação WEB, porém ainda
                         conhecendo e aprendendo outras linguagens, tanto front-end como back-end.
                     </p>
-                </div>
-            </section>
-            <section id="conhecimento">
-                <h1>Conhecimento</h1>
-                <div id="informacoes-conhecimento">
-                    <p class="formatacao-conhecimento">
-                        HTML5 – Básico/Intermediário <br>
-                        CSS3 - Intermediário <br>
-                        Bootstrap 4 - Básico <br>
-                        JAVA - Intermediário <br>
-                        Inglês – Básico/Intermediário <br>
-                        Photoshop - Básico
-                    </p>
-                </div>
-            </section>
-            <section id="cursos-aperfeicoamentos">
-                <h1>Cursos e Aperfeiçoamentos</h1>
-                <div id="informacoes-cursos-aperfeicoamentos">
-                    <p class="formatacao-cursos-aperfeicoamentos">
-                        Desenvolvimento WEB Completo 2020 - 20 Cursos + 20 Projeto – Udemy<br>
-                        Inglês Extremo – Curso Completo do Zero à Fluência – Udemy
-                    </p>
-                </div>
-            </section>
-            <section id="redes-contatos">
-                <h1>Redes e Contatos</h1>
-                <div id="informacoes-redes-contatos">
-                    <div class="formatacao-redes-contatos">
-                        <dl>
-                            <dt><a href="https://www.instagram.com/ianvicenzo/" target="_blank">Instagram</a></dt>
-                            <dt><a href="https://www.linkedin.com/in/ian-vicenzo-meneghelli/" target="_blank">Linkedin</a></dt>
-                            <dt><a href="https://github.com/I-Vicenzo" target="_blank">Git Hub</a></dt>
-                            <dt><a href="https://api.whatsapp.com/send?phone=5547992879543&text=Ol%C3%A1.%20Tudo%20bem%3F" target="_blank">(47)9 9287-9543</a></dt>
-                            <dt><a href="mailto:ivicenzo71@gmail.com?subject=Título%20da%20mensagem" target="_blank">ivicenzo71@gmail.com</a></dt>
-                        </dl>
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+
+            </main>
+            <footer>
+        
+            </footer>
+                <script>
+                function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    } else {
+                         x.style.display = "block";
+                        }
+                }
+                </script>
     </body>
 </html>
